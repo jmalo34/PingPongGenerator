@@ -19,6 +19,11 @@
                     array_push($count_up, 'pong');
                     $count_from = $count_from +1;
                 }
+                elseif ((($count_from % 3) == 0) && (($count_from % 5) == 0))
+                {
+                    array_push($count_up, 'ping-pong');
+                    $count_from = $count_from +1;
+                }
                 else
                 {
                     array_push($count_up, $count_from);
