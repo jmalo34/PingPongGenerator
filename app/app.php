@@ -11,7 +11,7 @@
         return $app['twig']->render('play.html.twig');
     });
 
-    $app->get("ping_ponged", function() user($app)
+    $app->get("ping_ponged", function() use($app)
     {
         $my_PingPongGenerator = new PingPongGenerator;
         $ping_played = $my_PingPongGenerator->generatePingPongArray($_GET['number']);
