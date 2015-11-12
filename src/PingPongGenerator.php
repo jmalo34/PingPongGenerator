@@ -7,7 +7,7 @@
 
             $count_from = 1;
 
-            while ($count_from < $input_number)
+            while ($count_from <= $input_number)
             {
                 if (($count_from % 3) == 0)
                 {
