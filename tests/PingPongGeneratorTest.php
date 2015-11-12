@@ -7,13 +7,13 @@
         {
             //Arrange
             $test_PingPongGenerator = new PingPongGenerator;
-            $input = 5;
+            $input = 16;
 
             //Act
             $result = $test_PingPongGenerator->generatePingPongArray($input);
 
             //Assert
-            $this->assertEquals((array(1, 2, 'ping', 4, 'pong')), $result);
+            $this->assertEquals((array(1, 2, 'ping', 4, 'pong', 'ping', 7, 8, 'ping', 'pong', 11, 'ping', 13, 14, 'ping-pong', 16)), $result);
         }
         //
         // function test_generatePingPongArray_Ping()
