@@ -1,11 +1,15 @@
-SPEC 1:
-Input:
-Output:
+SPEC 1:  The page will print integers in increments of 1 until the number is equal to the user input number
+Input:  5
+Output: 1, 2, 3, 4, 5
 
-SPEC 2:
-Input:
-Output:
+SPEC 2:  Numbers to be displayed that are divisible by 3, will print to the screen as the word "ping" in place of the actual integer
+Input:  5
+Output: 1, 2, ping, 4, 5
 
-SPEC 3:
-Input:
-Output:
+SPEC 3:  Numbers to be displayed that are divisible by 5, will print to the screen as the word "pong" in place of the actual integer
+Input:  5
+Output:  1, 2, ping, 4, pong
+
+SPEC 4:  Numbers to be displayed that are divisible by both 5 and 3 will print to the screen as the "ping-pong" in place of the actual integer
+Input: 16
+Output:  1, 2, ping, 4, pong, ping, 7, 8, ping, pong, 11, ping, 13, 14, ping-pong, 16
