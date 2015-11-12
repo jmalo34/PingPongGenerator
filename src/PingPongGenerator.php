@@ -5,16 +5,16 @@
         {
             $count_up = array();
 
-            $count_from = 0;
+            $count_from = 1;
 
             while ($count_from < $input_number)
             {
-                if ($count_from % 3)
+                if (($count_from % 3) == 0)
                 {
                     array_push($count_up, 'ping');
                     $count_from = $count_from +1;
                 }
-                elseif ($count_from % 5)
+                elseif (($count_from % 5) == 0)
                 {
                     array_push($count_up, 'pong');
                     $count_from = $count_from +1;

@@ -6,8 +6,12 @@
 </head>
 <body>
     <div class='container'>
+        {% if result is  not empty %}
         <h1>Ping Pong Generator</h1>
-        <h4>{{ result }}</h4>
+            {% for number in result %}
+                <p> {{ number }} </p>
+                {% endfor %}
+        {% endif %}
         <a href='/'>again, again!</a>
     </div>
 </body>
